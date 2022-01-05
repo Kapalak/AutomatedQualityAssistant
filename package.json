@@ -1,5 +1,5 @@
 {
-  "name": "AutomatedWebTester",
+  "name": "AutomatedQualityAssistant",
   "version": "1.0.0",
   "description": "This project is an automated web test runner based on cypress framework",
   "main": "index.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kapalak/AutomatedWebTester.git"
+    "url": "git+https://github.com/Kapalak/AutomatedQualityAssistant.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kapalak/AutomatedWebTester/issues"
+    "url": "https://github.com/Kapalak/AutomatedQualityAssistant/issues"
   },
-  "homepage": "https://github.com/Kapalak/AutomatedWebTester#readme"
+  "homepage": "https://github.com/Kapalak/AutomatedQualityAssistant#readme"
 }

@@ -29,14 +29,23 @@ import 'cypress-file-upload';
 import xpaths from '../needs/xpaths.js'
 import selectors from '../needs/selectors.js';
 
-Cypress.Commands.add('signin', (email, password) => {
-    cy.visit(Cypress.env('AUCHAN_ROOT_URL'))
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false
+  })
 
+Cypress.Commands.add('signin', (email, password) => {
+    cy.visit(Cypress.env('AUCHAN_ROOT_URL'));
+    cy.get(selectors.acceptCookiesPopup.acceptButton).should('be.visible').click();
+    cy.xpath(xpaths.homePage.anonymousHiText).should('be.visible');
+    cy.xpath(xpaths.homePage.connectMenuButton).should('be.visible').click();
+    cy.get(selectors.loginPage.logo)
+        .should('be.visible')
+        .log('Login page is displayed')
     cy.xpath(xpaths.loginPage.title)
         .should('be.visible')
         .log('Login page is displayed')
 
-    cy.xpath(selectors.loginPage.email)
+    cy.get(selectors.loginPage.email)
         .type(email)
         .should('have.value', email);
 

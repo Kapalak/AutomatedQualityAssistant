@@ -106,3 +106,4 @@ dist
 /cypress/screenshots/*
 /cypress/videos/*
 /tests/test-output-*
+/package-lock.json

@@ -6,6 +6,7 @@
       "toConsole": true,
       "attachments": true
     },
+    "blockHosts": ["*.google-analytics.com", "*.plausible.io"],
     "defaultCommandTimeout": 30000, 
     "execTimeout": 20000, 
     "taskTimeout": 60000, 
