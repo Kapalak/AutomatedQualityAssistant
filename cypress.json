@@ -1,0 +1,26 @@
+{
+    "integrationFolder": "cypress/integration/",
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "tests/test-output-[hash].xml",
+      "toConsole": true,
+      "attachments": true
+    },
+    "defaultCommandTimeout": 30000, 
+    "execTimeout": 20000, 
+    "taskTimeout": 60000, 
+    "pageLoadTimeout": 60000, 
+    "requestTimeout": 5000, 
+    "responseTimeout": 30000, 
+    "chromeWebSecurity": false, 
+    "video": true,
+    "videoCompression": 32,
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
+    "projectId": "4iy24d",
+    "env": {
+        "AUCHAN_ROOT_URL": "https://www.auchan.fr/",
+        "EMAIL": "aymen.benmiled@kapalak.com",
+        "PASSWORD": "Azer1234"
+    }
+}
